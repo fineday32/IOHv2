@@ -10,11 +10,15 @@
     <!-- Bootstrap -->
     <link href="assets/bootstrap-3.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="public/stylesheets/jquery-ui.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
   <body>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
     <script src="js/kinetic-v5.1.0.min.js"></script>
+    <script src="js/index.js"></script>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -22,12 +26,12 @@
     &nbsp;&nbsp;&nbsp;<img src='assets/ioh.png' alt='error' height='74.25' width='327.5'>
     <!-- 33:150   -->
     <div>
-      <span class='menu'>
-        <a href="url1" style="text-decoration:none;color:white;"><font size='4'><big>關於IOH</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="url2" style="text-decoration:none;color:white;"><font size='4'><big>IOH團隊</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="url3" style="text-decoration:none;color:white;"><font size='4'><big>參與IOH</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="url4" style="text-decoration:none;color:white;"><font size='4'><big>最新消息</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="url5" style="text-decoration:none;color:white;"><font size='4'><big>聯絡我們</big></font></a>
+      <span class='menu' id="menuID">
+        <a href="http://ioh.tw" style="text-decoration:none;color:white;"><font size='4'><big>關於IOH</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://ioh.tw" style="text-decoration:none;color:white;"><font size='4'><big>IOH團隊</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://ioh.tw" style="text-decoration:none;color:white;"><font size='4'><big>參與IOH</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://ioh.tw" style="text-decoration:none;color:white;"><font size='4'><big>最新消息</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://ioh.tw" style="text-decoration:none;color:white;"><font size='4'><big>聯絡我們</big></font></a>
       </span>
     </div>
 
@@ -76,21 +80,23 @@
       </a>
     </div>
 
-     <div style="background-color:rgb(146, 2, 23); text-align:center; padding-bottom:5px; position:relative; top:20px;">
-        <a href="url1" style="text-decoration:none;color:white;"><font size='3'><big>發現講座</big></font></a>
+     <div style="background-color:rgb(146, 2, 23); text-align:center; padding-bottom:5px; position:relative; top:20px;" id="menuID">
+        <a href="http://www.ntu.edu.tw" style="text-decoration:none;color:white;"><font size='3'><big>發現講座</big></font></a>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <font size='4' color="white"><big>|</big></font>
         &nbsp;&nbsp;&nbsp;
-        <a href="url2" style="text-decoration:none;color:white;"><font size='3'><big>搜尋講座</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.ntu.edu.tw" style="text-decoration:none;color:white;"><font size='3'><big>搜尋講座</big></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="text" id="inputKeyWords" name="firstname" placeholder="輸入關鍵字" style="height:20px; width:120px; text-align:center;">
     </div>
     
-    <div style="background-color:rgb(146, 2, 23); position:relative; top:30px; height:100px;">hi
+    <div style="background-color:rgb(146, 2, 23); position:relative; top:30px; height:115px;">
+        
+      <canvas id="circleDo" class="bigCircle" width="2000" height="115" style="position:relative; top:8px; left:-10px;">
+      Your browser does not support the HTML5 canvas tag.</canvas>
+    </div>
 
-    </div>
-    
-    <div style="width:500px; height:100px; border:1px solid #000; position:relative; top:100px;">This is a rectangle!
-    </div>
-    
+     <canvas id="circleDo" class="smallCircle"  width="200" height="100" style="position:relative; top:-70px; left:-20px;">
+      Your browser does not support the HTML5 canvas tag.</canvas>
+
   </body>
 </html>

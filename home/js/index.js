@@ -10,10 +10,11 @@ circleDo.ready(function(){
 	var x=95, y=50;
 	for (i=1; i<=15; i++)
 	{	
-
-
 		if (i%5===1)
+		{
 			drawCircle(1, x, y);
+			circleOption();
+		}
 		else
 			drawCircle(0, x, y);
 
@@ -21,7 +22,6 @@ circleDo.ready(function(){
 			x+=110;
 		else
 			x+=80;
-			
 	}
 	
 });
@@ -43,5 +43,9 @@ function drawCircle(size, x, y){
 	// set line color
     ctx.strokeStyle = '#ffffff';
 	ctx.stroke();
+}
+
+function circleOption(){
+	console.log('circleOption');
 }
 

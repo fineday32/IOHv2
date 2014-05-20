@@ -1,4 +1,5 @@
 var circleDo = $('#circleDo');
+var rect = $('#rectangle');
 
 circleDo.ready(function(){
 	// console.log('haha');
@@ -49,3 +50,44 @@ function circleOption(){
 	console.log('circleOption');
 }
 
+rect.ready(function(){
+	console.log('in rectangle');
+	var redCount=30, allCount=170;
+	var x=35, y=5;
+	for (i=1; i<=allCount; i++)
+	{
+		
+		if (i<=redCount)	
+		{
+			// red is rgb(202, 0, 13)
+			drawRect(x, y, "rgb(202, 0, 13)");
+			x+=60;
+		}
+		else
+		{
+			// gray is rgb(143, 146, 142)
+			drawRect(x, y, "rgb(143, 146, 142)");
+			x+=60;
+		}
+		if (i%23===0)
+		{
+			x=35;
+			y+=60;
+		}
+	}
+	
+	
+});
+
+function drawRect(x, y, color){
+	var c=document.getElementById("rectDraw");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.lineWidth="1";
+	// rgb(202, 0, 13)
+	ctx.strokeStyle=color;
+	ctx.rect(x,y,50,50); 
+	ctx.fillStyle=color;
+	ctx.fill();
+	ctx.stroke();
+}

@@ -42,3 +42,9 @@ left: 1px;
 .bigCircle{
 
 }
+
+#Footer {
+　height: 100px;
+　position: relative;
+　margin-top: -100px;
+}

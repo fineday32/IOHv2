@@ -24,3 +24,9 @@ left: 1px;
 .leftText{
   color:white;
 }
+
+.rightText{
+  color:rgb(117, 120, 119);
+  font-size: 120%;
+  position: relative;
+}

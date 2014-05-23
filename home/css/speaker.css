@@ -17,29 +17,10 @@ top: 1px;
 left: 1px;
 }
 
-.div{
-  background-color: red;
+#leftCol{
+  background-color: rgb(24, 25, 25);
 }
 
-.carouselLayout{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color:rgb(231,231,231);
-  
+.leftText{
+  color:white;
 }
-
-#circleDo {
-    /*width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px; 
-    border-color: red;*/
-    border-radius: 25px;
-    border-color: white;
-}
-
-.bigCircle{
-
-}
-

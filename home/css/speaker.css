@@ -30,3 +30,8 @@ left: 1px;
   font-size: 120%;
   position: relative;
 }
+
+table{
+  max-width: 110%;
+}
+
